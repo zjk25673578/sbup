@@ -10,7 +10,7 @@ import java.util.UUID;
 public class FileNameUtil {
 
     /**
-     * 获取一个文件名的扩展名, 文件名两边空格将被忽略
+     * 获取一个不重复的文件名的扩展名, 文件名两边空格将被忽略
      *
      * @param fileName null返回"", {""}返回"", {.xxx}返回"", {xxx.}返回""
      * @return
@@ -31,7 +31,7 @@ public class FileNameUtil {
     }
 
     /**
-     * 获取一个文件名(不带扩展名)
+     * 获取一个不重复的文件名(不带扩展名)
      * @return
      */
     public static String getFileName() {
@@ -39,7 +39,7 @@ public class FileNameUtil {
     }
 
     /**
-     * 获取一个文件名(带扩展名)
+     * 获取一个不重复的文件名(带扩展名)
      * @return
      */
     public static String getFileName(String fileName) {
@@ -51,7 +51,7 @@ public class FileNameUtil {
      * 全球唯一标示
      * @return
      */
-    private static String uuid() {
+    public static String uuid() {
         return UUID.randomUUID().toString().replace("-","");
     }
 

@@ -1,5 +1,8 @@
 package com.himalayan.sbup;
 
+/**
+ * 返回状态
+ */
 public enum StateEnum {
     NOT_BIND(4, "未绑定身份，无法操作"),
     NOT_IN_WECHAT(3, "未在微信客户端打开"),
@@ -12,7 +15,7 @@ public enum StateEnum {
     private int code;
     private String message;
 
-    private StateEnum(int code, String message) {
+    StateEnum(int code, String message) {
         this.code = code;
         this.message = message;
     }
