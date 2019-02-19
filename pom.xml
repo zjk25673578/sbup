@@ -14,7 +14,8 @@
     <name>sbup</name>
     <description>Demo project for Spring Boot</description>
 
-    <packaging>war</packaging>
+    <!--<packaging>war</packaging>-->
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>1.8</java.version>
@@ -34,6 +35,7 @@
     </dependencies>
 
     <build>
+        <finalName>sbup</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

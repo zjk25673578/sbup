@@ -3,6 +3,7 @@ package com.himalayan.sbup;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
+// war包所需配置
 public class SpringBootStartApplication extends SpringBootServletInitializer {
 
     @Override
